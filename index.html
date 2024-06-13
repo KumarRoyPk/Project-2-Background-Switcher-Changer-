@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Background Changer</title>
+    <style>
+        body {
+            margin: 0px;
+            padding: 20px 100px;
+        }
+
+        h1 {
+            text-align: center;
+            text-decoration: underline;
+            font-size: 35px;
+            font-weight: bold;
+        }
+
+        img {
+            width: 100%;
+            height: auto;
+            margin: 0px;
+            padding: 2px;
+        }
+
+        p {
+            text-align: justify;
+            font-size: 17px;
+
+        }
+
+        #btn-container {
+            text-align: right;
+
+        }
+
+        .btn {
+            height: 20px;
+            width: 20px;
+            border: 2px solid grey;
+            display: inline-block;
+            border-radius: 50%;
+
+        }
+
+        #white {
+            background-color: #ffffff;
+
+        }
+
+        #green {
+            background-color: #00FF00;
+        }
+
+        #yellow {
+            background-color: #FFFF00;
+        }
+
+        #black {
+            background-color: #000000;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="btn-container">
+        <span class="btn" id="white" onclick="colorChange('#ffffff')"></span>
+        <span class="btn" id="green" onclick="colorChange('#00FF00')"></span>
+        <span class="btn" id="yellow" onclick="colorChange('#FFFF00')"></span>
+        <span class="btn" id="black" onclick="colorChange('#000000')"></span>
+    </div>
+    <h1 class="change">About Us</h1>
+    <img src="./about_us.jpg" alt="about us image">
+    <p class="change">
+        There are different types of people in the world with different personalities. Every individual's personality is
+        unique and makes them stand out from the crowd. That's why it's essential to be able to define your personality
+        on your own.
+
+        About Me
+        As a student, I am in elementary school and try my best to attend every class. I have a close group of friends,
+        but Sanika is my best and most loyal friend. As a student, I participate in all of the school's extracurricular
+        activities and am good at all of them. I have outstanding academic performance and am a good athlete. I never
+        left an incomplete assignment or class. I prefer to do it before bed.
+
+        It is my habit to read the newspaper every day. I spent most of my time lying in the park with a book in my
+        hand. Even in class, I am usually a very attentive student. Apart from that, I am also very organised regarding
+        my work. I am not only responsible but also considerate of others. If my friends or classmates need help, I will
+        help them too.
+
+        I have a friendly personality, and I am a detail-oriented type. I am attentive and quick to recognise the needs
+        of people and situations. For example, I tend to notice people who are left out in groups and make friends with
+        them. They also tend to point out missing connections and blind spots when working on a project. I like to think
+        carefully about issues and how decisions affect people. This behaviour stems from my ability to perceive others'
+        emotions accurately and objectively without necessarily agreeing with them. It's a convenient strength to use.
+
+        Another strength of mine is that I am a great abstract thinker. This means an improved ability to deal with
+        complex and multifaceted problems. This strength has yet to be tested in the world of work, but having used it
+        in my mentorship role in the Church, I see its utility. I am inspired by the complex situations people face.
+        There, you can enjoy playing out in your mind how to approach people with different strategies, or showing
+        people new perspectives in the same situation, putting them in a better position to solve a problem.
+
+        My interests go hand in hand with my strengths. I love helping, interacting and meeting people's needs. I have a
+        particular kind heart for those left out of the hamster wheel, such as children with learning disabilities, the
+        elderly without close relatives, and the marginalised. I volunteer at a math and science camp for children with
+        learning disabilities during summers.
+
+        My Family
+        I live in Bhopal, Madhya Pradesh. I am from a joint family and live with my grandparents, uncles, aunts and
+        cousins. I am the youngest of only brothers and two sisters. We all go to the same school. My father is a
+        teacher, and my mother is a businessman. Both are passionate about their work.
+
+        I am lucky to have an open and outgoing family. My family always encourages me to do my best in all aspects of
+        life. They teach me moral values and help me make crucial decisions. Celebrate the festival with your family,
+        and you will have a good time with them.
+    </p>
+    <script>
+        function colorChange(color) {
+            document.body.style.backgroundColor = color;
+            let chng = document.getElementsByClassName("change");
+            if (color == "#000000") {
+
+                for (let elm of chng) {
+                    elm.style.color = "#ffffff";
+                }
+            }
+            else {
+                for (let elm of chng) {
+                    elm.style.color = "#000000";
+                }
+
+            }
+
+
+        }
+    </script>
+</body>
+
+</html>
